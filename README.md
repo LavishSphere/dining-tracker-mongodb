@@ -13,10 +13,10 @@ This repository contains the deliverables for the MongoDB version of the dining 
 - [uml.png](uml.png): UML class diagram image required by the assignment.
 - [erd.png](erd.png): ERD image for the logical/document model. Also found [here](https://lucid.app/lucidchart/8a26047b-d5cb-439e-bb4d-44ca2ba9385b/edit?viewport_loc=-2954%2C-2062%2C3062%2C1657%2C0_0&invitationId=inv_bb19176d-3923-450a-b58f-07c0f6634edb)
 - [definition_documents_collections.md](definition_documents_collections.md): document and collection definitions with sample JSON objects.
-- [users.json](users.json): separate import file for the users collection.
-- [menu_items.json](menu_items.json): separate import file for the menu_items collection.
-- [dining_locations.json](dining_locations.json): separate import file for the dining_locations collection.
-- [menu_snapshots.json](menu_snapshots.json): separate import file for the menu_snapshots collection.
+- [users.json](users.json) / [users.csv](users.csv): separate import files for the users collection (available in both JSON and CSV formats).
+- [menu_items.json](menu_items.json) / [menu_items.csv](menu_items.csv): separate import files for the menu_items collection (available in both JSON and CSV formats).
+- [dining_locations.json](dining_locations.json) / [dining_locations.csv](dining_locations.csv): separate import files for the dining_locations collection (available in both JSON and CSV formats).
+- [menu_snapshots.json](menu_snapshots.json) / [menu_snapshots.csv](menu_snapshots.csv): separate import files for the menu_snapshots collection (available in both JSON and CSV formats).
 - [schema.json](schema.json): sample extended JSON data for the MongoDB collections.
 - [data.json](data.json): original bundled JSON data file included in the workspace.
 - [queries.js](queries.js): MongoDB query examples used to demonstrate the database.
@@ -28,15 +28,25 @@ The main root collections are users, menu_items, dining_locations, and menu_snap
 ## How to Use the Files
 1. Review the diagrams in [uml.png](uml.png) and [erd.png](erd.png).
 2. Read the document design in [definition_documents_collections.md](definition_documents_collections.md).
-3. Load the sample data from the collection files (`users.json`, `menu_items.json`, `dining_locations.json`, `menu_snapshots.json`) into MongoDB.
+3. Load the sample data from the collection files into MongoDB. Data is available in both **JSON** and **CSV** formats for all 4 collections.
 4. Run the examples in [queries.js](queries.js) after connecting it to your local MongoDB instance.
 
-### Import Example
+### Import Examples
+
+#### Using JSON Files
 ```bash
 mongoimport --db nutrition_tracker_db --collection users --file users.json --jsonArray
 mongoimport --db nutrition_tracker_db --collection menu_items --file menu_items.json --jsonArray
 mongoimport --db nutrition_tracker_db --collection dining_locations --file dining_locations.json --jsonArray
 mongoimport --db nutrition_tracker_db --collection menu_snapshots --file menu_snapshots.json --jsonArray
+```
+
+#### Using CSV Files
+```bash
+mongoimport --db nutrition_tracker_db --collection users --type csv --headerline --file users.csv
+mongoimport --db nutrition_tracker_db --collection menu_items --type csv --headerline --file menu_items.csv
+mongoimport --db nutrition_tracker_db --collection dining_locations --type csv --headerline --file dining_locations.csv
+mongoimport --db nutrition_tracker_db --collection menu_snapshots --type csv --headerline --file menu_snapshots.csv
 ```
 
 ## Node + Express App
