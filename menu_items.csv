@@ -1,0 +1,11 @@
+_id.$oid,name,category,allergen_tags,nutrition_history
+65f1a2b3c4d5e6f7a8b90201,Grilled Chicken,Main,None,"[{""version_id"":""v1"",""calories"":180,""serving_size"":""4oz"",""recorded_at"":{""$date"":""2026-01-01T00:00:00Z""}}]"
+65f1a2b3c4d5e6f7a8b90202,Steamed Broccoli,Side,None,"[{""version_id"":""v1"",""calories"":35,""serving_size"":""1 cup"",""recorded_at"":{""$date"":""2026-01-01T00:00:00Z""}}]"
+65f1a2b3c4d5e6f7a8b90203,Cheese Pizza,Entree,"Dairy, Gluten","[{""version_id"":""v1"",""calories"":285,""serving_size"":""1 slice""}]"
+65f1a2b3c4d5e6f7a8b90204,Tofu Stir Fry,Vegan,Soy,"[{""version_id"":""v1"",""calories"":210,""serving_size"":""1 bowl""}]"
+65f1a2b3c4d5e6f7a8b90205,Beef Burger,Grill,Gluten,"[{""version_id"":""v1"",""calories"":450,""serving_size"":""1 patty""}]"
+65f1a2b3c4d5e6f7a8b90206,Garden Salad,Salad Bar,None,"[{""version_id"":""v1"",""calories"":50,""serving_size"":""2 cups""}]"
+65f1a2b3c4d5e6f7a8b90207,Mashed Potatoes,Side,Dairy,"[{""version_id"":""v1"",""calories"":150,""serving_size"":""0.5 cup""}]"
+65f1a2b3c4d5e6f7a8b90208,Apple,Fruit,None,"[{""version_id"":""v1"",""calories"":95,""serving_size"":""1 medium""}]"
+65f1a2b3c4d5e6f7a8b90209,Chocolate Cookie,Dessert,"Dairy, Gluten, Soy","[{""version_id"":""v1"",""calories"":160,""serving_size"":""1 cookie""}]"
+65f1a2b3c4d5e6f7a8b90210,Clam Chowder,Soup,"Shellfish, Dairy","[{""version_id"":""v1"",""calories"":220,""serving_size"":""8oz""}]"

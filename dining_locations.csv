@@ -1,0 +1,5 @@
+_id.$oid,name,campus,is_active,meal_periods
+65f1a2b3c4d5e6f7a8b90301,Founders Commons,Oakland,true,"[{""period_id"":""p1"",""name"":""Breakfast""},{""period_id"":""p2"",""name"":""Lunch""},{""period_id"":""p3"",""name"":""Dinner""}]"
+65f1a2b3c4d5e6f7a8b90302,Stetson East,Boston,true,"[{""period_id"":""p1"",""name"":""Lunch""},{""period_id"":""p2"",""name"":""Dinner""}]"
+65f1a2b3c4d5e6f7a8b90303,Stetson West,Boston,true,"[{""period_id"":""p1"",""name"":""Lunch""}]"
+65f1a2b3c4d5e6f7a8b90304,IV Dining,Boston,true,"[{""period_id"":""p1"",""name"":""Dinner""}]"
