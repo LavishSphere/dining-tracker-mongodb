@@ -21,7 +21,7 @@ This repository contains the deliverables for the MongoDB version of the dining 
 - [data.json](data.json): original bundled JSON data file included in the workspace.
 - [queries.js](queries.js): MongoDB query examples used to demonstrate the database.
 - [LICENSE](LICENSE): project license.
-
+- [Video](https://northeastern-my.sharepoint.com/:v:/g/personal/khayrul_a_northeastern_edu/IQCG2237NOJnQbyfi3gWcFvWAWngP3pP-o5ZUBSNWHXEJuM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=0djanc) App and code walkthrough.
 ## Data Model Summary
 The main root collections are users, menu_items, dining_locations, and menu_snapshots. Related data is embedded where it makes sense for MongoDB, such as dietary goals under users, meal periods under dining locations, and offerings under menu snapshots.
 
