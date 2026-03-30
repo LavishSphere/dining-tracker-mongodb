@@ -1,0 +1,32 @@
+[
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90401"
+    },
+    "menu_date": {
+      "$date": "2026-03-28T00:00:00Z"
+    },
+    "location_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90301"
+    },
+    "meal_period_id": "p2",
+    "offerings": [
+      {
+        "offering_id": "off_202",
+        "station": "Grill",
+        "menu_item_id": {
+          "$oid": "65f1a2b3c4d5e6f7a8b90201"
+        },
+        "nutrition_version_id": "v1"
+      },
+      {
+        "offering_id": "off_203",
+        "station": "Sides",
+        "menu_item_id": {
+          "$oid": "65f1a2b3c4d5e6f7a8b90202"
+        },
+        "nutrition_version_id": "v1"
+      }
+    ]
+  }
+]

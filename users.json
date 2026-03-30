@@ -1,0 +1,471 @@
+[
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90101"
+    },
+    "email": "khayrul.a@northeastern.edu",
+    "display_name": "Ashsmith Khayrul",
+    "created_at": {
+      "$date": "2026-03-28T12:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_1",
+        "goal_type": "Calorie Limit",
+        "target_value": 2500,
+        "unit": "kcal"
+      }
+    ],
+    "filter_presets": [
+      {
+        "preset_id": "fp_1",
+        "name": "Low Carb",
+        "max_calories": 500
+      }
+    ],
+    "meal_plans": [
+      {
+        "plan_id": "mp_1",
+        "plan_date": "2026-03-29",
+        "planned_items": [
+          {
+            "menu_item_id": {
+              "$oid": "65f1a2b3c4d5e6f7a8b90201"
+            }
+          }
+        ]
+      }
+    ],
+    "consumption_entries": [
+      {
+        "entry_id": "ce_01",
+        "offering_id": "off_202",
+        "consumed_at": {
+          "$date": "2026-03-28T13:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90102"
+    },
+    "email": "student.b@northeastern.edu",
+    "display_name": "Ben Smith",
+    "created_at": {
+      "$date": "2026-03-20T08:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_2",
+        "goal_type": "Protein",
+        "target_value": 180,
+        "unit": "g"
+      }
+    ],
+    "filter_presets": [
+      {
+        "preset_id": "fp_2",
+        "name": "High Protein",
+        "min_protein": 30
+      }
+    ],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90103"
+    },
+    "email": "jordan.t@northeastern.edu",
+    "display_name": "Jordan Taylor",
+    "created_at": {
+      "$date": "2026-03-21T10:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_3",
+        "goal_type": "Sodium Limit",
+        "target_value": 2000,
+        "unit": "mg"
+      }
+    ],
+    "filter_presets": [
+      {
+        "preset_id": "fp_3",
+        "name": "Heart Healthy",
+        "max_sodium": 500
+      }
+    ],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90104"
+    },
+    "email": "alex.m@northeastern.edu",
+    "display_name": "Alex Martinez",
+    "created_at": {
+      "$date": "2026-03-22T11:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_4",
+        "goal_type": "Vegan Balance",
+        "target_value": 2000,
+        "unit": "kcal"
+      }
+    ],
+    "filter_presets": [
+      {
+        "preset_id": "fp_4",
+        "name": "Strict Vegan",
+        "exclude_allergens": [
+          "Dairy",
+          "Eggs"
+        ]
+      }
+    ],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90105"
+    },
+    "email": "casey.l@northeastern.edu",
+    "display_name": "Casey Lee",
+    "created_at": {
+      "$date": "2026-03-23T09:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_5",
+        "goal_type": "Bulking",
+        "target_value": 3500,
+        "unit": "kcal"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90106"
+    },
+    "email": "riley.p@northeastern.edu",
+    "display_name": "Riley Parker",
+    "created_at": {
+      "$date": "2026-03-24T14:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_6",
+        "goal_type": "Sugar Limit",
+        "target_value": 30,
+        "unit": "g"
+      }
+    ],
+    "filter_presets": [
+      {
+        "preset_id": "fp_5",
+        "name": "No Sweets",
+        "max_sugar": 5
+      }
+    ],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90107"
+    },
+    "email": "morgan.s@northeastern.edu",
+    "display_name": "Morgan Sky",
+    "created_at": {
+      "$date": "2026-03-25T15:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_7",
+        "goal_type": "Iron Target",
+        "target_value": 18,
+        "unit": "mg"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90108"
+    },
+    "email": "taylor.w@northeastern.edu",
+    "display_name": "Taylor West",
+    "created_at": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "dietary_goals": [],
+    "filter_presets": [
+      {
+        "preset_id": "fp_6",
+        "name": "Gluten Free Only",
+        "exclude_allergens": [
+          "Gluten"
+        ]
+      }
+    ],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90109"
+    },
+    "email": "skyler.f@northeastern.edu",
+    "display_name": "Skyler Finn",
+    "created_at": {
+      "$date": "2026-03-27T10:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_8",
+        "goal_type": "Fiber",
+        "target_value": 38,
+        "unit": "g"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90110"
+    },
+    "email": "quinn.r@northeastern.edu",
+    "display_name": "Quinn River",
+    "created_at": {
+      "$date": "2026-03-28T08:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_9",
+        "goal_type": "Keto Fat Target",
+        "target_value": 150,
+        "unit": "g"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90111"
+    },
+    "email": "parker.j@northeastern.edu",
+    "display_name": "Parker Jones",
+    "created_at": {
+      "$date": "2026-03-28T09:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_10",
+        "goal_type": "Maintenance",
+        "target_value": 2200,
+        "unit": "kcal"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90112"
+    },
+    "email": "sam.v@northeastern.edu",
+    "display_name": "Sam Valentine",
+    "created_at": {
+      "$date": "2026-03-28T10:00:00Z"
+    },
+    "dietary_goals": [],
+    "filter_presets": [
+      {
+        "preset_id": "fp_7",
+        "name": "Dairy Free",
+        "exclude_allergens": [
+          "Dairy"
+        ]
+      }
+    ],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90113"
+    },
+    "email": "charlie.d@northeastern.edu",
+    "display_name": "Charlie Davis",
+    "created_at": {
+      "$date": "2026-03-28T11:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_11",
+        "goal_type": "Hydration",
+        "target_value": 3,
+        "unit": "L"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90114"
+    },
+    "email": "drew.h@northeastern.edu",
+    "display_name": "Drew Hunter",
+    "created_at": {
+      "$date": "2026-03-28T12:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_12",
+        "goal_type": "Carb Load",
+        "target_value": 400,
+        "unit": "g"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90115"
+    },
+    "email": "jamie.k@northeastern.edu",
+    "display_name": "Jamie King",
+    "created_at": {
+      "$date": "2026-03-28T13:00:00Z"
+    },
+    "dietary_goals": [],
+    "filter_presets": [
+      {
+        "preset_id": "fp_8",
+        "name": "Nut Free",
+        "exclude_allergens": [
+          "Peanuts",
+          "Tree Nuts"
+        ]
+      }
+    ],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90116"
+    },
+    "email": "logan.s@northeastern.edu",
+    "display_name": "Logan Stone",
+    "created_at": {
+      "$date": "2026-03-28T14:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_13",
+        "goal_type": "Weight Loss",
+        "target_value": 1800,
+        "unit": "kcal"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90117"
+    },
+    "email": "blake.r@northeastern.edu",
+    "display_name": "Blake Reed",
+    "created_at": {
+      "$date": "2026-03-28T15:00:00Z"
+    },
+    "dietary_goals": [],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90118"
+    },
+    "email": "avery.g@northeastern.edu",
+    "display_name": "Avery Green",
+    "created_at": {
+      "$date": "2026-03-28T16:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_14",
+        "goal_type": "Vitamin C",
+        "target_value": 90,
+        "unit": "mg"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90119"
+    },
+    "email": "finley.c@northeastern.edu",
+    "display_name": "Finley Cross",
+    "created_at": {
+      "$date": "2026-03-28T17:00:00Z"
+    },
+    "dietary_goals": [],
+    "filter_presets": [
+      {
+        "preset_id": "fp_9",
+        "name": "Low Fat",
+        "max_fat": 10
+      }
+    ],
+    "meal_plans": [],
+    "consumption_entries": []
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90120"
+    },
+    "email": "river.p@northeastern.edu",
+    "display_name": "River Phoenix",
+    "created_at": {
+      "$date": "2026-03-28T18:00:00Z"
+    },
+    "dietary_goals": [
+      {
+        "goal_id": "g_15",
+        "goal_type": "Calcium",
+        "target_value": 1000,
+        "unit": "mg"
+      }
+    ],
+    "filter_presets": [],
+    "meal_plans": [],
+    "consumption_entries": []
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "nutrition_tracker_db": {
+    "users": [
+      {
+        "_id": ObjectId("65f1a2b3c4d5e6f7a8b90123"), // Primary Key (Root)
+        "email": "khayrul.a@northeastern.edu",
+        "display_name": "Ashsmith Khayrul",
+        "created_at": ISODate("2026-03-28T12:00:00Z"),
+        
+        // HIERARCHY: Embedded
+        "dietary_goals": [
+          { "goal_id": "g_001", "goal_type": "Daily Calorie Limit", "target_value": 2500, "unit": "kcal" },
+          { "goal_id": "g_002", "goal_type": "Protein Target", "target_value": 150, "unit": "g" }
+        ],
+        "filter_presets": [
+          { "preset_id": "fp_01", "name": "Low Carb", "max_calories": 500 }
+        ],
+        
+        "meal_plans": [
+          { 
+            "plan_id": "mp_555", 
+            "plan_date": "2026-03-29", 
+            "planned_items": [
+              { "menu_item_id": ObjectId("65f1a2b3c4d5e6f7a8b90456") } // REF: menu_items._id
+            ] 
+          }
+        ],
+        "consumption_entries": [
+          { 
+            "entry_id": "ce_99", 
+            "consumed_at": ISODate("2026-03-28T13:15:00Z"), 
+            "offering_id": "off_202" // REF: menu_snapshots.offerings.offering_id
+          }
+        ]
+      },
+      {
+        "_id": ObjectId("65f1a2b3c4d5e6f7a8b90124"),
+        "email": "student.j@northeastern.edu",
+        "display_name": "Jane Doe",
+        "created_at": ISODate("2026-03-25T09:30:00Z"),
+        "dietary_goals": [],
+        "filter_presets": [],
+        "meal_plans": [],
+        "consumption_entries": []
+      }
+    ],
+
+    "menu_items": [
+      {
+        "_id": ObjectId("65f1a2b3c4d5e6f7a8b90456"), // Primary Key (Root)
+        "name": "Grilled Chicken",
+        "category": "Main Course",
+        "allergen_tags": "None",
+        
+        // HIERARCHY: Embedded
+        "nutrition_history": [
+          { "version_id": "v_01", "calories": 180, "serving_size": "4oz", "recorded_at": ISODate("2026-01-01T00:00:00Z") },
+          { "version_id": "v_02", "calories": 165, "serving_size": "4oz", "recorded_at": ISODate("2026-03-01T00:00:00Z") }
+        ]
+      },
+      {
+        "_id": ObjectId("65f1a2b3c4d5e6f7a8b90457"),
+        "name": "Steamed Broccoli",
+        "category": "Sides",
+        "allergen_tags": "None",
+        "nutrition_history": [
+          { "version_id": "v_01", "calories": 35, "serving_size": "1 cup", "recorded_at": ISODate("2026-01-01T00:00:00Z") }
+        ]
+      }
+    ],
+
+    "dining_locations": [
+      {
+        "_id": ObjectId("65f1a2b3c4d5e6f7a8b90999"), // Primary Key (Root)
+        "name": "Founders Commons",
+        "campus": "Oakland",
+        "is_active": true,
+        
+        // HIERARCHY: Embedded
+        "meal_periods": [
+          { "period_id": "p_lunch", "name": "Lunch", "start_time": "11:00", "end_time": "14:30" },
+          { "period_id": "p_dinner", "name": "Dinner", "start_time": "17:00", "end_time": "20:00" }
+        ]
+      },
+      {
+        "_id": ObjectId("65f1a2b3c4d5e6f7a8b90988"),
+        "name": "Stetson East",
+        "campus": "Boston",
+        "is_active": true,
+        "meal_periods": [
+          { "period_id": "p_brunch", "name": "Weekend Brunch", "start_time": "10:00", "end_time": "15:00" }
+        ]
+      }
+    ],
+
+    "menu_snapshots": [
+      {
+        "_id": ObjectId("65f1a2b3c4d5e6f7a8b90789"), // Primary Key (Root)
+        "menu_date": ISODate("2026-03-28T00:00:00Z"),
+        "location_id": ObjectId("65f1a2b3c4d5e6f7a8b90999"), // REF: dining_locations._id
+        "meal_period_id": "p_lunch", // REF: dining_locations.meal_periods.period_id
+        
+        // HIERARCHY: Embedded
+        "offerings": [
+          { 
+            "offering_id": "off_202", 
+            "station": "The Grill", 
+            "menu_item_id": ObjectId("65f1a2b3c4d5e6f7a8b90456"), // REF: menu_items._id
+            "nutrition_version_id": "v_02" // REF: menu_items.nutrition_history.version_id
+          }
+        ]
+      },
+      {
+        "_id": ObjectId("65f1a2b3c4d5e6f7a8b90790"),
+        "menu_date": ISODate("2026-03-28T00:00:00Z"),
+        "location_id": ObjectId("65f1a2b3c4d5e6f7a8b90999"), // REF: dining_locations._id
+        "meal_period_id": "p_dinner", // REF: dining_locations.meal_periods.period_id
+        "offerings": [
+          { 
+            "offering_id": "off_305", 
+            "station": "Main Line", 
+            "menu_item_id": ObjectId("65f1a2b3c4d5e6f7a8b90457"), // REF: menu_items._id
+            "nutrition_version_id": "v_01" // REF: menu_items.nutrition_history.version_id
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "dining-tracker-mongodb",
+  "version": "1.0.0",
+  "description": "Basic Node and Express CRUD app for the dining tracker MongoDB project.",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0"
+  }
+}

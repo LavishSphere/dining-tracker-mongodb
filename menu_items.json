@@ -1,0 +1,158 @@
+[
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90201"
+    },
+    "name": "Grilled Chicken",
+    "category": "Main",
+    "allergen_tags": "None",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 180,
+        "serving_size": "4oz",
+        "recorded_at": {
+          "$date": "2026-01-01T00:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90202"
+    },
+    "name": "Steamed Broccoli",
+    "category": "Side",
+    "allergen_tags": "None",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 35,
+        "serving_size": "1 cup",
+        "recorded_at": {
+          "$date": "2026-01-01T00:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90203"
+    },
+    "name": "Cheese Pizza",
+    "category": "Entree",
+    "allergen_tags": "Dairy, Gluten",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 285,
+        "serving_size": "1 slice"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90204"
+    },
+    "name": "Tofu Stir Fry",
+    "category": "Vegan",
+    "allergen_tags": "Soy",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 210,
+        "serving_size": "1 bowl"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90205"
+    },
+    "name": "Beef Burger",
+    "category": "Grill",
+    "allergen_tags": "Gluten",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 450,
+        "serving_size": "1 patty"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90206"
+    },
+    "name": "Garden Salad",
+    "category": "Salad Bar",
+    "allergen_tags": "None",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 50,
+        "serving_size": "2 cups"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90207"
+    },
+    "name": "Mashed Potatoes",
+    "category": "Side",
+    "allergen_tags": "Dairy",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 150,
+        "serving_size": "0.5 cup"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90208"
+    },
+    "name": "Apple",
+    "category": "Fruit",
+    "allergen_tags": "None",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 95,
+        "serving_size": "1 medium"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90209"
+    },
+    "name": "Chocolate Cookie",
+    "category": "Dessert",
+    "allergen_tags": "Dairy, Gluten, Soy",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 160,
+        "serving_size": "1 cookie"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f7a8b90210"
+    },
+    "name": "Clam Chowder",
+    "category": "Soup",
+    "allergen_tags": "Shellfish, Dairy",
+    "nutrition_history": [
+      {
+        "version_id": "v1",
+        "calories": 220,
+        "serving_size": "8oz"
+      }
+    ]
+  }
+]
