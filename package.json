@@ -1,7 +1,7 @@
 {
   "name": "dining-tracker-mongodb",
   "version": "1.0.0",
-  "description": "Basic Node and Express CRUD app for the dining tracker MongoDB project.",
+  "description": "Basic Node and Express app for the dining tracker MongoDB project.",
   "main": "app.js",
   "type": "commonjs",
   "scripts": {

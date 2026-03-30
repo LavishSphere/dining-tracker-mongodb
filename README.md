@@ -7,7 +7,7 @@
 This repository contains the deliverables for the MongoDB version of the dining tracker project. It includes the assignment write-up, UML and ERD diagrams, document model definitions, sample data, and MongoDB query examples.
 
 ## Deliverables
-- [app.js](app.js): basic Node + Express CRUD application for MongoDB.
+- [app.js](app.js): basic Node + Express application for MongoDB.
 - [package.json](package.json): project metadata and runtime dependencies.
 - [requirements.pdf](requirements.pdf): written requirements document for the project submission.
 - [uml.png](uml.png): UML class diagram image required by the assignment.
