@@ -11,7 +11,7 @@ This repository contains the deliverables for the MongoDB version of the dining 
 - [package.json](package.json): project metadata and runtime dependencies.
 - [requirements.pdf](requirements.pdf): written requirements document for the project submission.
 - [uml.png](uml.png): UML class diagram image required by the assignment.
-- [erd.png](erd.png): ERD image for the logical/document model.
+- [erd.png](erd.png): ERD image for the logical/document model. Also found [here](https://lucid.app/lucidchart/8a26047b-d5cb-439e-bb4d-44ca2ba9385b/edit?viewport_loc=-2954%2C-2062%2C3062%2C1657%2C0_0&invitationId=inv_bb19176d-3923-450a-b58f-07c0f6634edb)
 - [definition_documents_collections.md](definition_documents_collections.md): document and collection definitions with sample JSON objects.
 - [users.json](users.json): separate import file for the users collection.
 - [menu_items.json](menu_items.json): separate import file for the menu_items collection.
@@ -49,10 +49,6 @@ The basic app lives in [app.js](app.js) and uses dependencies declared in [packa
 4. Open http://localhost:3000 in your browser.
 
 The app uses the local database name nutrition_tracker_db by default. You can override the connection with MONGO_URL and MONGO_DB environment variables if needed.
-
-## Notes
-- The repository is organized to match the assignment requirements directly.
-- If your instructor expects the diagrams to appear inside the PDF submission, you can reference [uml.png](uml.png) and [erd.png](erd.png) there as embedded images.
 
 ## Assignment Checklist
 1. Problem requirements and conceptual model in UML

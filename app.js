@@ -729,5 +729,5 @@ app.listen(port, () => {
 });
 
 // Parts of this codebase were inspired by or adapted from the following sources:
-// - Claude Cod
+// - Claude Code
 // - GitHub Copilot
